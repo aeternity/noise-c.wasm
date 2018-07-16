@@ -439,7 +439,7 @@ function CreateLib (lib, constants, options)
 	}
 
 function Wrapper (lib, constants)
-	CreateLib.bind(this, lib, constants)
+	CreateLib.bind(@, lib, constants)
 
 if typeof define == 'function' && define['amd']
 	# AMD
